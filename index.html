@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="work1();">
+    NAME:<br>
+    <input type="text"id="name">
+    <br>
+    GENDER:<br>
+    <input type="text"id="gender">
+    <br>
+
+    CLASS:<br>
+    <input type="number"id="class">
+    <input type="submit"value="submitt">
+    <br>
+</form> 
+     <h1>I have some information</h1>
+    <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit est possimus totam cumque ea
+        architecto perferendis voluptatibus. Numquam voluptas perspiciatis quae molestiae eum debitis ipsa provident
+        beatae labore sunt, dolores accusantium! Autem, ab eius accusamus cupiditate ullam at dolorem et! <p onclick="some()">CLICK ME</p></p> -->
+
+<form onsubmit="few()">
+    STUDENT NAME:<br>
+    <input type="text"id="na"><br>
+    STUDENT CLASS:<br>
+    <input type="text"id="cl"><br>
+    STUDENT ROLL NO:<br>
+    <input type="text"id="rol"><br>
+    STUDENT ID:<br>
+    <input type="text"id="id">
+    <input type="submit"value="submitt">
+</form>
+
+
+    <script>
+        function work1() {
+
+            let a = document.getElementById('name').value
+            let b = document.getElementById('gender').value
+            let c = document.getElementById('class').value
+            document.write(a + " " + b + " " + c + "")
+
+
+        }
+        function some(){
+            let a="Suppose in your webpage there is content area in whichyou have entered your item details, but user can only seesome details on first look. When user clicks on “Readmore” button, full detail of that particular item will bedisplayed."
+            document.getElementById("info").innerHTML+=a
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
